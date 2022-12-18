@@ -5,8 +5,8 @@
 * uuid - Creates a unique id each time
 
 ##### Notes:
-1. npm package version format xx.yy.zz, where xx is the major version, yy is the minor version, zz is the patch. E.g. __"uuid" :"^9.0.0"__
-2. ^ before version number allows to update yy and zz. E.g. **"uuid" :"^9.0.0"**
-3. ~ before version number allows only patch updates zz. E.g. **"uuid" :"~9.0.0"**
-4. To INSTALL a specific version of npm package you have to mention it using '@' symbol. E.g. $ **npm i uuid@9.0.0** , only **package name** installs latest version
-5. To UNINSTALL a package from npm use anyone of the commands **uninstall** (or) **un** (or) **rm** (or) __remove__. E.g. __$ npm rm nodemon__
+1. npm package version format __xx.yy.zz__, where __xx__ is the major version, __yy__ is the minor version, __zz__ is the patch. E.g. __"uuid" :"^9.0.0"__
+2. __^__ before version number allows to update __yy__ and __zz__. E.g. **"uuid" :"^9.0.0"**
+3. __~__ before version number allows only patch updates __zz__. E.g. **"uuid" :"~9.0.0"**
+4. To __INSTALL__ a specific version of npm package you have to mention it using '__@__' symbol. E.g. $ **npm i uuid@9.0.0** , only **package name** installs latest version
+5. To __UNINSTALL__ a package from npm use anyone of the commands **uninstall** (or) **un** (or) **rm** (or) __remove__. E.g. __$ npm rm nodemon__
