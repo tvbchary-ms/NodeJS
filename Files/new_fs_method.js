@@ -14,6 +14,8 @@ const fileOps = async () =>{
         console.log("Append Successful!");
         await fsPromises.rename(path.join(__dirname,'reply.txt'), path.join(__dirname,'newreply.txt'))
         console.log("Rename Successful!");
+        await fsPromises.copyFile(path.join(__dirname,'newreply.txt'), path.join(__dirname,'reply.txt'))
+        console.log("Copy Successful!");
     } catch (err) {
         console.log(err);
     }
