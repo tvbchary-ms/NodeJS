@@ -6,8 +6,10 @@ const path = require('path');
 const fileOps = async () =>{
     try {
         const data = await fsPromises.readFile(path.join(__dirname,'starter.txt'), 'utf-8');
-        console.log(data);
         console.log("Read Successful!");
+        console.log('Data is: ', data);
+        await fsPromises.unlink(path.join(__dirname,'starter.txt')) // This will delete the file.
+        await fsPromises.writeFile(path.join(__dirname,'newstarter.txt'), data)
         await fsPromises.writeFile(path.join(__dirname,'reply.txt'), 'This is Reply \n')
         console.log("Write Successful!");
         await fsPromises.appendFile(path.join(__dirname,'reply.txt'), 'How are you doing \nI am Fine')
