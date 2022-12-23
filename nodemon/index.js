@@ -1,8 +1,16 @@
-const {format} = require('date-fns'); //Date time package
-const {v4: uuid} = require('uuid'); //{v4:uuid} stands for import v4 as uuid
+const logEvents = require('./logEvents');
+
+const EventEmitter = require('events');
+
+class MyEmitter extends EventEmitter {};
 
 
-console.log(format(new Date(), 'yyyy-MM-dd\tHH:mm:ss'));
+//initialize object
+const myEmitter = new MyEmitter();
 
-console.log(uuid()); // creates a different id each time we run
-console.log("Hello");
+//add listener for the log event
+myEmitter.on('log', (msg)=> logEvents(msg));
+
+setTimeout(()=>{
+    myEmitter.emit('log', 'Log event emitted');
+}, 2000);
