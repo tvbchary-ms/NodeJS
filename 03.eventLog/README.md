@@ -3,6 +3,7 @@
 * nodemon - Monitors for the change in a given file - When changes it runs the file again
 * date-fns - Date and Time functions
 * uuid - Creates a unique id each time
+* this also contains Event logging - creating uuid for each event and logging it into a file
 
 ##### Notes:
 > 1. npm package version format ***xx.yy.zz***, where ***xx*** is the major version, ***yy*** is the minor version, ***zz*** is the patch. E.g. ***"uuid" :"^9.0.0"***
